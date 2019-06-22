@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ff.dao.SeatMapper">
+
+
+ <!-- - 根据票id链接查询座位的行和列-->
+ <select id="allHasBuy" resultType="com.ff.entity.Seat">
+        select ttms_seat.seat_row,ttms_seat.seat_col from ttms_ticket,ttms_seat where ttms_ticket.seat_id = ttms_seat.seat_id and ttms_ticket.schedule_id=#{schedule_id} and ttms_seat.seat_id = #{seat_id};
+
+</select>
+<!--    根据座位的行号，列ｈａｏ，所在演出厅找id-->
+ <select id="selectIdByrcs" resultType="java.lang.Integer">
+select seat_id from ttms_seat where seat_row=#{row} and seat_col=#{col} and studio_id = #{studio_id}
+
+</select>
+
+
+<!--    根据票的id获取座位的id-->
+    <select id="selectSeatIdByTiId" resultType="Integer">
+        select seat_id from ttms_ticket where ticket_id=#{ticket_id};
+
+    </select>
+</mapper>

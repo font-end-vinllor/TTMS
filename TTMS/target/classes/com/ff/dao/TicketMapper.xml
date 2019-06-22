@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.ff.dao.TicketMapper">
+ <update id="addTicket">
+  update ttms_ticket set ticket_code = #{code},ticket_status = 1
+  where seat_id = #{seat_id} and schedule_id = #{schedule_id}
+ </update>
+ 
+<!-- 根据演出厅id和剧目id获取所有卖出的票-->
+<select id="hasBuy" resultType="Integer">
+  select ticket_id from ttms_ticket where schedule_id=#{schedule_id} and ticket_status=1
+</select>
+
+<!-- 通过schedule_id ,seat_id 获取ticket_id-->
+ <select id="selectTicketIdBySS" resultType="Integer">
+  select ticket_id from ttms_ticket where schedule_id = #{schedule_id} and seat_id = #{seat_id}
+ </select>
+
+
+
+<!-- 通过order_id 修改订单和票的状态-->
+ <update id="deleteTicket">
+  update ttms_sale s,ttms_ticket t  set s.sale_status=0, t.ticket_status=0 where s.ticket_id = t.ticket_id and s.sale_id=#{order_id};
+
+ </update>
+</mapper>

@@ -1,0 +1,101 @@
+.bottom {
+    background: #0081bc;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.bottom .container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.filmtipbox {
+    background: #e1eef4;
+    padding: 15px 20px;
+    width: 490px;
+    border-radius: 5px;
+    float: left;
+    margin: 20px 0 10px 10px;
+}
+
+.filmtipbox h2 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #033333;
+}
+
+.filmtipbox p {
+    width: 450px;
+    height: 104px;
+    margin: 10px auto 0;
+    background: url("../images/filmmovie.jpg") no-repeat;
+}
+
+.first {
+    width: 420px;
+    margin-left: 0;
+}
+
+.moviecard {
+    height: 140px;
+    position: relative;
+    zoom: 1;
+    padding-left: 180px;
+    overflow: hidden;
+}
+
+.moviecard .cardbg1 {
+    background: url("../images/cinema_png.png") no-repeat 0 -228px;
+    width: 110px;
+    height: 90px;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+}
+
+.moviecard .cardbg {
+    background: url("../images/filmmovie.jpg") no-repeat 0 -104px;
+    width: 182px;
+    height: 146px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+
+.tipinfo {
+    position: absolute;
+    right: 40px;
+}
+
+.tipinfo ul {
+    float: left;
+    margin: 10px 10px;
+}
+
+.tipinfo ul li {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.filmtipbottom {
+    width: 960px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.filmtipbottom b {
+    font-weight: bold;
+    font-size: 18px;
+    color: #033333;
+}
+
+.filmtipbottom span {
+    color: #333;
+}
+
+.mline {
+    padding: 0 10px;
+    color: #333;
+}

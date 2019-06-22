@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.ff.dao.PlayMapper">
+
+<!-- 查询出正在热映/即将上映的所有-->
+ <select id="allPlaying" resultType="com.ff.entity.Play">
+    select ttms_play.*,ttms_dict.dict_value as play_type from ttms_play,ttms_dict where play_status = #{status} and ttms_play.dict_id = ttms_dict.dict_id
+ </select>
+
+<!--    查询出电影的所有种类-->
+
+    <select id="allType" resultType="String">
+        select dict_value from ttms_dict where dict_code = '001'
+    </select>
+
+
+<!--    根据电影状态和电影类型查询所有-->
+    <select id="allTypePlays" resultType="com.ff.entity.Play">
+        select ttms_play.*,ttms_dict.dict_value as play_type from ttms_dict,ttms_play where ttms_dict.dict_id = ttms_play.dict_id and ttms_dict.dict_value =  #{type}
+    </select>
+
+<!--    根据电影id查询电影详情-->
+
+    <select id="playInfoById" resultType="com.ff.entity.Play">
+        select ttms_play.*,ttms_dict.dict_value as play_type from ttms_play,ttms_dict where ttms_play. play_id = #{play_id} and ttms_play.dict_id = ttms_dict.dict_id;
+
+    </select>
+</mapper>

@@ -1,0 +1,223 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #08c;
+    text-decoration: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+.newsearch {
+    height: auto;
+}
+
+.nsearch_color {
+    height: 465px;
+    background-color: #127bab;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.nsearch_mid {
+    width: 1012px;
+    margin: auto;
+    position: relative;
+    margin-top: -365px;
+}
+
+.nsearch_bg {
+    width: 1012px;
+    background: url("../images/pngbg1.png") no-repeat center top;
+}
+
+.nsearch_info {
+    width: 1013px;
+    position: relative;
+    zoom: 1;
+    height: 40px;
+    margin: 0 auto 0;
+    z-index: 1;
+}
+
+.nsearch_info .topsearch {
+    width: 674px;
+    height: 47px;
+    background: url("../images/searchend_s.png") no-repeat 0 0;
+    border-radius: 20px;
+    z-index: 2;
+    position: relative;
+    zoom: 1;
+    position: absolute;
+    left: 175px;
+    top: -20px;
+}
+
+.nsearch_info .searchshadow {
+    box-shadow: none;
+    height: 47px;
+    padding-left: 90px;
+}
+
+.selctsearch {
+    height: 38px;
+    line-height: 38px;
+    width: 95px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 13px;
+}
+
+.nsearch_info .selctsearch strong {
+    line-height: 47px;
+    height: 47px;
+    font-size: 14px;
+    cursor: pointer;
+    font-style: normal;
+}
+
+.nsearch_info .selctsearch span {
+    display: inline-lock;
+    position: relative;
+    vertical-align: middle;
+    width: 1px;
+    height: 14px;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.nsearch_info .topsearch .text {
+    width: 82%;
+    margin: 0;
+    height: 47px;
+    background: 0;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    font-size: 14px;
+    padding: 0 20px;
+    color: #898989;
+    font-family: "微软雅黑", "microsoft yahei";
+    outline: 0;
+}
+
+.nsearch_info .topsearch .button {
+    font-size: 12px;
+    border: 0;
+    width: 55px;
+    height: 37px;
+    background-position: -56px -100px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    background: url("../images/searchend_s.png");
+}
+
+.nsearch_con,
+.nsearch_hide {
+    width: 1000px;
+    padding: 0 0 20px 0;
+    background: #fff;
+    min-height: 400px;
+    margin: auto;
+}
+
+.nsearch_tab {
+    height: 35px;
+    border-bottom: 1px solid #dedede;
+    padding: 10px 25px 0;
+    position: relative;
+    zoom: 1;
+    text-align: right;
+    z-index: 0;
+}
+
+.nsearch_more {
+    float: left;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    min-width: 60px;
+    line-height: 24px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.clearfix:after,
+.fix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.nsearch_other {
+    padding: 45px 0 0;
+    min-height: 200px;
+}
+
+.other_list {
+    border-bottom: 1px solid #f3f3f3;
+    margin: 0 0 30px 0;
+}
+
+.other_list li {
+    padding-left: 180px;
+    position: relative;
+    zoom: 1;
+    margin-bottom: 40px;
+}
+
+.other_list h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    padding: 10px 0 10px 0;
+    background: #fff;
+}
+
+.other_list h3 a {
+    color: #0087e2;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.other_list h3 a span {
+    color: #bf1200;
+}
+
+.other_mid .pic {
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+.other_mid .pic img {
+    vertical-align: top;
+    border: 1px solid #c4c4c4;
+}
+
+.other_mid .other_txt {
+    width: 450px;
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 22px;
+    float: left;
+}

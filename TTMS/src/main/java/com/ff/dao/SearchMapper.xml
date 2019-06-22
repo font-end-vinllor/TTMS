@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.ff.dao.SearchMapper">
+<select id="searchPlay" resultType="com.ff.entity.Play">
+   select distinct p.*,d.dict_value as play_type from ttms_play p,ttms_dict d where p.dict_id = d.dict_id and p.play_name like '%${key}%'or p.play_author like '%${key}%' or p.play_editor like '%${key}%'
+   or p.play_country like '%${key}%'
+</select>
+
+</mapper>

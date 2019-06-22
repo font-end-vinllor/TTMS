@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.ff.dao.OrderMapper">
+<!--当用户点击到支付页面前保存订单到数据库-->
+ <insert id="addOrder">
+   insert into ttms_sale(ticket_id,sale_time,sale_status,user_id) values(#{ticket_id},#{date},0,#{user_id})
+ </insert>
+
+<!-- //支付成功后修改票的状态-->
+
+ <update id="updateOrderStatus">
+
+     update ttms_sale set sale_status=1  where ticket_id=#{ticket_id};
+
+ </update>
+
+
+    <select id="selectAllOrdersByUId" resultType="com.ff.entity.Order">
+        select sal.sale_id as order_id,play.play_image,ti.ticket_price as price,play.play_name,sal.sale_time as date from ttms_sale sal,ttms_ticket ti,ttms_schedule sch,ttms_play play where sal.user_id=#{user_id} and sal.ticket_id=ti.ticket_id and ti.schedule_id=sch.schedule_id and sch.play_id = play.play_id
+        and sal.sale_status=1;
+    </select>
+</mapper>

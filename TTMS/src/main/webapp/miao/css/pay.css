@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ecedee;
+    color: #333;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.alieditContainer {
+    position: relative;
+}
+
+.sixDigitPassword {
+    position: absolute;
+    left: -122px;
+    top: 0;
+    width: 1000px;
+    height: 26px;
+    color: #fff;
+    font-size: 12px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-user-select: initial;
+    outline: 'none';
+    z-index: 999;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.sixDigitPassword-box {
+
+    cursor: text;
+    background: #fff;
+    outline: none;
+    position: relative;
+    padding: 8px 0;
+    height: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+}
+
+.sixDigitPassword-box i {
+    float: left;
+    display: block;
+    padding: 4px 0;
+    height: 7px;
+    border-left: 1px solid #cccccc;
+}
+
+.sixDigitPassword-box .active {
+    background: url('../images/password-blink.gif') no-repeat center center;
+}
+
+.sixDigitPassword-box b {
+    display: block;
+    margin: 0 auto;
+    width: 7px;
+    height: 7px;
+    overflow: hidden;
+    visibility: hidden;
+    background: url('../images/passeord-dot.png') no-repeat;
+}
+
+.sixDigitPassword-box span {
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    height: 30px;
+    border: 1px solid rgba(82, 168, 236, .8);
+    border: 1px solid #00ffff;
+    border-radius: 2px;
+    visibility: hidden;
+    -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.75), 0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.ui-securitycore .ui-form-item .ui-form-explain {
+    margin-top: 8px;
+}
+
+.i-block {
+    display: block;
+    width: 170px;
+    font-size: 14px;
+    line-height: 30px;
+
+}
+
+.six-password {
+    position: relative;
+    height: 33px;
+    width: 182px;
+    overflow: hidden;
+    vertical-align: middle;
+
+}
+
+/* header */
+.pay-container {
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+
+.pay-container .head-title {
+    float: left;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+
+.head-title .logo {
+    width: 100px;
+    height: 30px;
+    float: left;
+    position: relative;
+    line-height: 60px;
+    font: 20px/1.5 Arial, Helvetica, sans-serif;
+
+    text-align: center;
+    margin-right: 10px;
+}
+
+.head-title .logo-title {
+    display: inline-block;
+    line-height: 60px;
+    font: normal 18px/26px Microsoft YaHei, SimSun;
+    border-left: 1px solid gray;
+    color: #1a1a1a;
+    padding-left: 10px;
+    margin-top: 2px;
+}
+
+.head-title .logo-tu {
+    font-size: 30px;
+    vertical-align: top;
+    line-height: 30px;
+    color: rgb(50, 124, 153);
+}
+
+.header-right {
+    float: right;
+    margin-top: 17px;
+    overflow: hidden;
+}
+
+.header-rigth span {
+    padding: 0 10px;
+    margin-right: -1px;
+    float: left;
+}
+
+.formatN {
+    display: block;
+    float: left;
+    color: #b2b2b2;
+    font-size: 15px;
+    line-height: 40px;
+
+}
+
+.sub-con {
+    width: 700px;
+    height: 50px;
+    float: left;
+
+}
+
+.paySubmit {
+    display: inline-block;
+    width: 98px;
+    height: 32px;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #fff;
+    background: #0ae;
+    border: 1px solid #0ae;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 2px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../iconfont/iconfont.woff2') format('woff2'),
+    url('../iconfont/iconfont.woff') format('woff'),
+    url('../iconfont/iconfont.ttf') format('truetype'),
+    url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.order-wrapper {
+    width: 890px;
+    height: 125px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-left: 116px;
+    position: relative;
+    z-index: 10;
+    line-height: 2.0em;
+    border-bottom: 3px solid #b3b3b3;
+    background: #eff0f1;
+    font-size: 17px
+}
+
+.order-title {
+    width: 600px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 15px;
+
+    height: auto;
+    line-height: 25px;
+}
+
+.order-seller {
+    height: auto;
+    line-height: 25px;
+}
+
+.order-amount {
+    position: absolute;
+    right: 27px;
+    top: 40px;
+    text-align: right;
+}
+
+.order-amount em {
+    color: #ff8208;
+    font-weight: 700;
+    font-size: 22px;
+    font-style: normal;
+}
+
+.main-container {
+    border-bottom: 3px solid #a6a6a6;
+    padding: 20px;
+    width: 950px;
+    height: 270px;
+    margin: 0 auto;
+    background-color:#fff;
+}
+
+.main-container .container {
+    width: 916px;
+    height: 116px;
+}
+
+.row-container-focus {
+    padding: 0;
+    border: 4px solid #cad6ef;
+    border-color: #85a1d4;
+    width: 902px;
+    height: 52px;
+}
+
+.row-container-focus .logo {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 19px;
+    float: left;
+}
+
+.row-container-focus .channel-name {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 50px;
+    margin-left: 20px;
+
+}
+
+.row-container-focus .right{
+    display: block;
+    float: right;
+    width: 160px;
+    height:50px;
+    margin-top: 17px;
+
+}
+
+.row-container-focus .right em{
+    color: #ff8208;
+    font-weight: 700;
+    font-size: 22px;
+    font-style: normal;
+}

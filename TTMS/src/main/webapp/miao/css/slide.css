@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+}
+body{
+    font: 12px/150% helvetica,"微软雅黑","microsoft yahei",verdana,lucida,arial,sans-serif,"黑体";
+}
+a {
+    text-decoration: none;
+}
+
+/* 焦点图 */
+#show {
+    position: relative;
+    height: 420px;
+    width: 960px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+
+}
+
+#show a {
+
+    display: inline;
+}
+
+#show .img {
+    position: absolute;
+    width: 960px;
+    height: 420px;
+    overflow: hidden
+}
+
+#show .img span {
+    position: absolute;
+    width: 19999px;
+    display: block
+}
+/*  */
+#show .img span a{
+    display: inline-block;
+    width: 960px;
+    height: 420px;
+    position: relative;
+
+}
+#show .img span a .pic-info{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    font-size: 30px;
+    left: 150px;
+    top: 170px;
+    text-shadow: 0 0 1px #000;
+}
+
+/*  */
+#show .btns {
+    z-index: 10;
+    position: absolute;
+    width: 960px
+}
+
+#show .btns B {
+    position: absolute;
+    width: 100px;
+    display: block;
+    height: 14px;
+    overflow: hidden;
+    top: 370px;
+    left: 50%
+}
+
+#show .btns B I {
+    width: 10px;
+    background: #414140;
+    float: left;
+    height: 10px;
+    font-size: 0px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-right: 6px;
+    border: #414140 2px solid;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px
+}
+
+#show .btns B I:hover {
+    background: #a7a7a6
+}
+
+#show .btns B I.on {
+    background: #3cd2f1;
+    cursor: default
+}
+
+#show .btns B I.on:hover {
+    background: #3cd2f1;
+    cursor: default
+}
+
+#show .btns S {
+    position: absolute;
+    WIDTH: 60px;
+    display: none;
+    height: 80px;
+    overflow: hidden;
+    top: 170px;
+    cursor: pointer
+}
+
+#show .btns S I {
+    position: absolute;
+    width: 60px;
+    background: url("../images/btn_show.png");
+    height: 160px;
+
+}
+
+#show .btns S.prev {
+    left: 0px
+}
+
+#show .btns S.prev I {
+    top: -80px
+}
+
+#show .btns S.next {
+    right: 0px
+}
+
+.show-hover#show .btns S {
+    display: block
+}
+
+.masks {
+    opacity: 0.6;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    width: 172px;
+    height: 420px;
+    position: absolute;
+    background: #000;
+    overflow: hidden
+}
+
+.img .pic-info .hotfilm {
+    font-style: normal;
+    width: 76px;
+    font-size: 14px;
+    line-height: 1;
+    padding: 5px 10px;
+    color: #fff;
+    background: #ff6d00;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-shadow: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.img .pic-info h2 {
+    display: block;
+    font-size: 36px;
+    line-height: 1.3em;
+    color: #fff;
+}
+.img .pic-info .text-info{
+    display: block;
+    width: 300px;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6em;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ico_ydot{
+    width: 26px;
+    height: 23px;
+    background: url("../images/cinema_png.png") no-repeat -140px -222px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 0 5px 0 0;
+}

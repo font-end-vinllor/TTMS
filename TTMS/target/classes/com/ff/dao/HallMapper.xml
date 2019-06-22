@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.ff.dao.HallMapper">
+<!-- 根据studio_id获取演出厅-->
+<select id="selectHallById" resultType="com.ff.entity.Studio">
+  select * from ttms_studio where studio_id = #{studio_id}
+</select>
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ff.dao.ScheduleMapper">
+
+    <!--    根据剧目id和日期查询演出计划-->
+
+
+    <select id="schByDateAndPId" resultType="com.ff.entity.Schedule">
+select sche.schedule_id,
+        sche.studio_id,
+        sche.schedule_date,
+        sche.schedule_time,
+        stu.studio_name,
+        sche.schedule_price as price ,
+        (stu.studio_rows*stu.studio_cols) as seatCount
+from
+        ttms_schedule sche,ttms_play p,ttms_studio stu
+ where sche.play_id = p.play_id and sche.studio_id = stu.studio_id and p.play_id = #{play_id}
+ and sche.schedule_date = #{date};
+
+
+
+  </select>
+    <!--     获取某个剧目所有的演出日期-->
+    <select id="dateByPlayId" resultType="java.sql.Date">
+            select distinct schedule_date from ttms_schedule,ttms_play
+             where ttms_play.play_id = ttms_schedule.play_id and ttms_play.play_id = #{play_id}
+</select>
+
+
+    <!--    根据schedule_id查询演出计划-->
+    <select id="selectScheById" resultType="com.ff.entity.Schedule">
+        select she.schedule_id,she.studio_id,she.schedule_date,she.schedule_time,stu.studio_name,schedule_price as price from ttms_schedule as she,ttms_studio stu where she.studio_id = stu.studio_id and she.schedule_id = #{schedule_id}
+    </select>
+
+
+</mapper>

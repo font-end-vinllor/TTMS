@@ -1,0 +1,444 @@
+    .love {
+        display: block;
+        width: 100px;
+        height: 30px;
+        float: right;
+        margin-right: 50px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    
+    .db-bodyout {
+        width: 100%;
+        background: #fff;
+        position: relative;
+        height: auto;
+    }
+    
+    .db-bodybg {
+        background-color: #127bab;
+        width: 100%;
+        height: 228px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+    }
+    
+    .db_shadow {
+        background: url("../images/group_shadow.png") no-repeat 0 0;
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+        padding: 17px 11px 0;
+    }
+    
+    .db_topcont {
+        background: #fff;
+        overflow: hidden;
+        height: auto;
+    }
+    
+    .db_coverout {
+        position: relative;
+        zoom: 1;
+        height: 0;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .db_coverinner {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+    
+    .db_coverpicbox {
+        background: #f9f9fa;
+        border: 1px solid #d5d5d5;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #999;
+        padding: 10px;
+        width: 272px;
+    }
+    
+    .db_cover {
+        background: #000;
+        text-align: center;
+        position: relative;
+        zoom: 1;
+        overflow: hidden;
+        width: 270px;
+        min-height: 275px;
+        border-radius: 6px;
+        border: 1px solid #000;
+    }
+    
+    .db_cover img {
+        width: 270px;
+        max-height: 405px;
+    }
+    
+    .db_cover .bg {
+        background: #000;
+        position: absolute;
+        height: 115px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        opacity: 0.8;
+    }
+    
+    .db_wsticket {
+        position: absolute;
+        height: 105px;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        z-index: 4;
+    }
+    
+    .db_wsticket .ticket_tit {
+        display: inline-block;
+        position: relative;
+        zoom: 1;
+        border-right: 1px solid #808081;
+        padding-right: 20px;
+        margin-right: 15px;
+        text-align: right;
+    }
+    
+    .ticket_tit b {
+        font-size: 18px;
+        color: #fff;
+        line-height: 1.2em;
+    }
+    
+    .ticket_price {
+        display: inline-block;
+        position: relative;
+        zoom: 1;
+        font-size: 18px;
+        color: #ff9300;
+    }
+    
+    .ticket_price strong {
+        font-size: 52px;
+        line-height: 1em;
+        font-weight: bold;
+    }
+    
+    .db_wsticket .btn_ticket {
+        background: #f77603;
+        border-radius: 18px;
+        color: #fff;
+        width: 195px;
+        height: 35px;
+        font-size: 20px;
+        line-height: 36px;
+        overflow: hidden;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        zoom: 1;
+        letter-spacing: 2px;
+        margin-top: 5px;
+    }
+    
+    .db_ihead {
+        width: 660px;
+        padding-left: 340px;
+        margin: 0 auto;
+        zoom: 1;
+    }
+    
+    .db_ihead .db_head {
+        width: 660px;
+    }
+    
+    .db_head {
+        margin: 0 auto;
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 25px;
+        zoom: 1;
+        z-index: 5;
+    }
+    
+    .db_head h1 {
+        display: inline-block;
+        zoom: 1;
+        line-height: 1.2em;
+        color: #333;
+    }
+    
+    .db_year {
+        font-weight: normal;
+        color: #333;
+        line-height: 1em;
+        display: inline-block;
+    }
+    
+    .db_head .db_enname {
+        display: block;
+        margin-top: 8px;
+        margin-left: 0;
+        color: #333;
+        line-height: 1.2em;
+    }
+    
+    .db_head .otherbox {
+        background: #444;
+        display: inline-block;
+        color: #fff;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 15px;
+        padding: 0 10px;
+        border-radius: 3px;
+        position: relative;
+        zoom: 1;
+    }
+    
+    .db_nav {
+        background: #127bab;
+        width: 680px;
+        height: 30px;
+        margin-left: -32px;
+        position: relative;
+        z-index: 5;
+        box-shadow: 0 1px 3px #dbdcdf;
+        padding-left: 10px;
+        padding-top: 8px;
+    }
+    
+    .db_nav span {
+        font-size: 24px;
+        color: #fff;
+    }
+    
+    .db_contout {
+        background: #fff;
+        position: relative;
+        zoom: 1;
+        padding-bottom: 15px;
+        font-size: 14px;
+        padding-top: 15px;
+        z-index: 1;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .base_r {
+        width: 670px;
+        float: right;
+    }
+    
+    .pt15 {
+        padding-top: 15px;
+    }
+    
+    .info_l {
+        float: left;
+        width: 407px;
+        margin-left: 6px;
+    }
+    
+    .info_l dd {
+        border-bottom: 1px dotted #999;
+        position: relative;
+        zoom: 1;
+        padding: 9px 0 9px 95px;
+        line-height: 1.5em;
+        font-size: 13px;
+    }
+    
+    .info_l dd strong {
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 95px;
+        font-size: 14px;
+        line-height: 1.5em;
+        font-weight: bold;
+    }
+    
+    .info_l dd span {
+        margin-right: 10px;
+        color: #08c;
+    }
+    
+    .mt12 {
+        margin-top: 12px;
+    }
+    
+    .px14 {
+        font-size: 14px;
+    }
+    
+    .mt6 {
+        margin-top: 6px;
+    }
+    
+    .lh18 {
+        line-height: 180%;
+    }
+    
+    .db_buy {
+        width: 670px;
+        height: 30px;
+        box-shadow: 0 1px 3px #dbdcdf;
+        padding-left: 10px;
+        padding-top: 10px;
+        float: right;
+        margin-top: 20px;
+        border-left: 10px solid #ff6d00;
+        border-bottom: 1px solid #d5d5d5;
+    }
+    
+    .db_buy span {
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .morepic {
+        width: 272px;
+        float: left;
+        height: auto;
+        margin-left: 20px;
+        margin-top: 20px;
+        background: url("../images/cinema_mid01.png") no-repeat right top;
+    }
+    
+    .uptitle {
+        padding: 0 20px 20px 5px;
+        font-size: 14px;
+    }
+    
+    .uptitle h2 {
+        font-size: 20px;
+        line-height: 1;
+        color: #333;
+    }
+    
+    .uppic li {
+        padding: 0 0 25px 0;
+        margin-left: 30px;
+    }
+    
+    .uppic .picmid {
+        width: 75px;
+        position: relative;
+        zoom: 1;
+    }
+    
+    .uppic .picmid img {
+        border: 1px solid #c4c4c4;
+    }
+    
+    .uppic .txtmid {
+        width: 100px;
+        margin-left: 10px;
+    }
+    
+    .uppic .txtmid h2 {
+        font-size: 14px;
+        padding-bottom: 5px;
+        color: #333;
+    }
+    
+    .uppic .txtmid h2 a {
+        color: #333;
+    }
+    
+    .uppic .picmid,
+    .uppic .txtmid {
+        float: left;
+    }
+    
+    .uppic .txtmid p {
+        line-height: 22px;
+    }
+    
+    .ci_filmbox {
+        width: 652px;
+        height: auto;
+        padding: 20px 0 0 40px;
+        float: right;
+    }
+    
+    .playtime {
+        width: 100%;
+        background: url("../images/playtime.jpg") no-repeat left top;
+    }
+    
+    .playtime tr.first td {
+        border-top: 0;
+    }
+    
+    .playtime td.tl {
+        width: 16%;
+    }
+    
+    .playtime td {
+        text-align: center;
+        font-size: 14px;
+        color: #757575;
+        vertical-align: middle;
+        border: 1px dashed #cdcdcd;
+        border-left: none;
+        border-right: 0;
+        padding: 15px 0;
+    }
+    
+    .p_r {
+        position: relative;
+    }
+    
+    .playtime td.tl p {
+        text-align: left;
+    }
+    
+    .playtime p {
+        padding: 2px 0;
+    }
+    
+    .ci_p_time {
+        font-size: 28px;
+        line-height: 1;
+        color: #454545;
+        font-weight: bold;
+    }
+    
+    .playtime td p.end {
+        color: #ccc;
+        font-size: 12px;
+    }
+    
+    .px12 {
+        font-size: 12px;
+    }
+    
+    .playtime p.newprice {
+        position: relative;
+    }
+    
+    .newprice {
+        color: #ef6e09;
+        font-size: 28px;
+        line-height: 1;
+    }
+    
+    .ico_c_ticket {
+        display: block;
+        width: 106px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        background: #0081bc;
+        border-radius: 20px;
+    }

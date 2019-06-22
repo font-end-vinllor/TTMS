@@ -1,0 +1,496 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: 12px/150% helvetica, "微软雅黑", "microsoft yahei", verdana, lucida, arial, sans-serif, "黑体";
+}
+
+a {
+    text-decoration: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+}
+
+.header-top,
+.header-main a:hover {
+    color: #00acff;
+}
+
+.header-top,
+.header-main img {
+    border: none;
+    vertical-align: top;
+}
+
+.header-top input,
+button {
+    border: none;
+    outline: none;
+}
+
+.header-top ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'), url('../iconfont/iconfont.woff2') format('woff2'), url('../iconfont/iconfont.woff') format('woff'), url('../iconfont/iconfont.ttf') format('truetype'), url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clearfix:after {
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.header-top .fl {
+    float: left;
+}
+
+.header-top .fr {
+    float: right;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    display: block;
+    font-style: normal;
+    background: url("../images/icon.png") no-repeat;
+}
+
+
+/*header styles*/
+
+.header {
+    width: 100%;
+    height: 440px;
+    /*背景颜色*/
+}
+
+.header-main {
+    width: 100%;
+    height: 418px;
+    margin: 0 auto;
+    position: relative;
+    background: #5d0b11;
+}
+
+.header-top {
+    width: 100%;
+    height: 60px;
+    background: #192332;
+}
+
+.header-logo {
+    margin-top: -20px;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+}
+
+.header-logo a {
+    display: block;
+}
+
+.header-search {
+    width: 330px;
+    height: 40px;
+    margin: 10px 20px 0 320px;
+    position: relative;
+}
+
+.txt-input {
+    width: 240px;
+    height: 40px;
+    background-color: rgba(236, 229, 229, 0.6);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+}
+
+.header-search input {
+    width: 234px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    background-color: transparent;
+}
+
+.header-search a {
+    float: left;
+    width: 80px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #0081bc;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.search-drop {
+    position: absolute;
+    width: 350px;
+    padding: 10px 0;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    top: 40px;
+    left: 10px;
+    display: none;
+}
+
+.search-drop div {
+    width: 330px;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.search-drop div.div-hover {
+    background-color: #f5f5f5;
+}
+
+.search-drop div span,
+.search-drop div p {
+    float: left;
+}
+
+.search-drop div span {
+    width: 40px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.search-drop div span.hot-word {
+    color: #f50;
+}
+
+.search-drop div p {
+    width: 290px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.header-nav {
+    width: 170px;
+    float: right;
+    position: relative;
+    padding: 0 18px;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.header-nav a {
+    display: inline-block;
+    color: #c8c8c8;
+    background-color: transparent;
+    text-decoration: none;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+.header-nav .yuan {
+    min-width: 200px;
+    position: absolute;
+    right: 50px;
+}
+
+.header-nav a:hover {
+    color: #0081bc
+}
+
+.header-nav em {
+    width: 0;
+    height: 16px;
+    border-left: 1px solid #303947;
+    margin: 0 10px;
+}
+
+.head-font {
+    float: left;
+    width: 100px;
+    height: 60px;
+    margin-top: 0
+}
+
+.head-cart {
+    background: rgba(82, 125, 145, 0.767);
+    height: 62px;
+    width: 62px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.head-cart a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+}
+
+.head-cart a:hover {
+    color: rgba(255, 85, 0, 0.829);
+}
+
+.gouwu,
+.shou,
+.jiao {
+    display: block;
+    width: 50px;
+    height: 30px;
+    margin-bottom: 6px;
+    margin-top: -3px;
+}
+
+.icon-account {
+    width: 38px;
+    height: 38px;
+    background-position: right top;
+}
+
+.header-banner {
+    width: 1240px;
+    height: 420px;
+    margin: 0 auto;
+}
+
+.banner-img {
+    height: 420px;
+    background: url("../images/banners/banner0.png") no-repeat center center;
+}
+
+.header-menu {
+    width: 190px;
+    height: 360px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.header-menu div {
+    height: 44px;
+    color: #9a9a9a;
+    cursor: pointer;
+    border-bottom: 1px solid #3c3838;
+}
+
+.header-menu div:last-child {
+    border: none;
+}
+
+.header-menu div h2,
+.header-menu div p {
+    font-size: 14px;
+    float: left;
+    line-height: 44px;
+}
+
+.header-menu div h2::after {
+    content: ":";
+}
+
+.header-menu .menu-active {
+    height: 70px;
+    color: #fff;
+}
+
+.header-menu .menu-active h2,
+.header-menu .menu-active p {
+    clear: both;
+}
+
+.header-menu .menu-active h2 {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.header-menu .menu-active p {
+    font-size: 14px;
+    line-height: 34px;
+}
+
+.header-menu .menu-active h2::after {
+    content: "";
+}
+
+
+/*footer*/
+
+.footout {
+    background: #f7f7f7;
+    font-family: helvetica, "微软雅黑", "microsoft yahei", verdana, lucida, arial, sans-serif, "黑体";
+}
+
+.footout .topline {
+    background: url("../images/foot.png") no-repeat center 0 #337fab;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footinner {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 13px;
+}
+
+.db_foot {
+    background: #f7f7f7;
+    color: #7e7e7f;
+    text-align: center;
+    font-family: verdana, "宋体";
+    padding: 30px 0 20px;
+    line-height: 2em;
+}
+
+.ml12 {
+    margin-left: 12px;
+}
+
+.mr12 {
+    margin-right: 12px;
+}
+
+.bottom {
+    background: #0081bc;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.bottom .container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.filmtipbox {
+    background: #e1eef4;
+    padding: 15px 20px;
+    width: 490px;
+    border-radius: 5px;
+    float: left;
+    margin: 20px 0 10px 10px;
+}
+
+.filmtipbox h2 {
+    font-size: 18px;
+    line-height: 26px;
+    color: #033333;
+}
+
+.filmtipbox p {
+    width: 450px;
+    height: 104px;
+    margin: 10px auto 0;
+    background: url("../images/filmmovie.jpg") no-repeat;
+}
+
+.first {
+    width: 420px;
+    margin-left: 0;
+}
+
+.moviecard {
+    height: 140px;
+    position: relative;
+    zoom: 1;
+    padding-left: 180px;
+    overflow: hidden;
+}
+
+.moviecard .cardbg1 {
+    background: url("../images/cinema_png.png") no-repeat 0 -228px;
+    width: 110px;
+    height: 90px;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+}
+
+.moviecard .cardbg {
+    background: url("../images/filmmovie.jpg") no-repeat 0 -104px;
+    width: 182px;
+    height: 146px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+
+.tipinfo {
+    position: absolute;
+    right: 40px;
+}
+
+.tipinfo ul {
+    float: left;
+    margin: 10px 10px;
+}
+
+.tipinfo ul li {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.filmtipbottom {
+    width: 960px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.filmtipbottom b {
+    font-weight: bold;
+    font-size: 18px;
+    color: #033333;
+}
+
+.filmtipbottom span {
+    color: #333;
+}
+
+.mline {
+    padding: 0 10px;
+    color: #333;
+}

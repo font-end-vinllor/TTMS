@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.ff.dao.UserMapper">
+    <insert id="addUser" parameterType="com.ff.entity.User">
+        insert into ttms_user(user_type,user_name,user_password,user_qq)
+        values(28,#{user_name},#{user_password},#{user_qq})
+    </insert>
+
+    <select id="selectUser" parameterType="String" resultType="com.ff.entity.User">
+        select * from ttms_user where user_name = #{user_name}
+    </select>
+
+    <update id="modifyPwd">
+        update ttms_user set user_password = #{user_pwd} where user_name = #{user_name}
+    </update>
+
+</mapper>
